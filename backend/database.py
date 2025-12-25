@@ -1,5 +1,5 @@
-import mysql.connector
-from mysql.connector import Error
+import psycopg2
+from psycopg2 import Error
 import os
 import json
 from typing import Optional, Dict
@@ -13,31 +13,30 @@ class Database:
         self.user = os.getenv("DB_USER", "root")
         self.password = os.getenv("DB_PASSWORD", "")
         self.database = os.getenv("DB_NAME", "symptom_checker")
-        self.port = int(os.getenv("DB_PORT", 3306))
+        self.port = int(os.getenv("DB_PORT", 5432))
         self.connection = None
     
     def connect(self):
         """Establish database connection"""
         try:
-            self.connection = mysql.connector.connect(
+            self.connection = psycopg2.connect(
                 host=self.host,
                 user=self.user,
                 password=self.password,
                 database=self.database,
                 port=self.port
             )
-            if self.connection.is_connected():
-                print("Successfully connected to MySQL database")
-                return True
+            print("Successfully connected to PostgreSQL database")
+            return True
         except Error as e:
-            print(f"Error connecting to MySQL: {e}")
+            print(f"Error connecting to PostgreSQL: {e}")
             return False
     
     def disconnect(self):
         """Close database connection"""
         if self.connection and self.connection.is_connected():
             self.connection.close()
-            print("MySQL connection closed")
+            print("Database connection closed")
     
     def save_analysis(
         self,
