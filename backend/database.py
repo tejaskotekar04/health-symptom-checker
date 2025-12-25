@@ -32,6 +32,7 @@ class Database:
             print(f"Error connecting to PostgreSQL: {e}")
             return False
     
+    # ... rest of the code stays the same
     def disconnect(self):
         """Close database connection"""
         if self.connection and self.connection.is_connected():
