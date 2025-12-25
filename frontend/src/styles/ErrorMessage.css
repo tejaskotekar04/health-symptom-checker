@@ -1,0 +1,57 @@
+.error-container {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+  animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+.error-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #fee;
+  border: 2px solid #e74c3c;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.error-icon {
+  font-size: 1.5rem;
+}
+
+.error-message {
+  flex: 1;
+  color: #c0392b;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #c0392b;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  background: #e74c3c;
+  color: white;
+  border-radius: 4px;
+}
