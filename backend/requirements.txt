@@ -4,8 +4,7 @@ pydantic==2.5.0
 python-dotenv==1.0.0
 groq==0.4.1
 python-multipart==0.0.6
-<<<<<<< HEAD
 mysql-connector-python==8.2.0
-=======
 
->>>>>>> 8320c771be47f6d2c3926779ae8cfc9c76b74306
+
+
