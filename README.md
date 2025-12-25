@@ -201,8 +201,8 @@ This project is licensed under the MIT License.
 
 **Tejas Kotekar**
 
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
+- GitHub: [@YOUR_USERNAME](https://github.com/tejaskotekar04)
+- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/tejas-kotekar-0302b6227/)
 
 ## 🙏 Acknowledgments
 
@@ -212,4 +212,4 @@ This project is licensed under the MIT License.
 
 ---
 
-Made with ❤️ by Tejas Kotekar
+Made by Tejas Kotekar
